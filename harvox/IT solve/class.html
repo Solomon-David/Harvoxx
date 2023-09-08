@@ -1,0 +1,127 @@
+<head>
+
+    <style>
+        li{
+        list-style: none;
+        margin: 0;
+        padding:0;
+    }
+
+
+        a{
+            font-size: 1.4em;
+        }
+
+        #nav1 {
+            width:100%;
+            background-color: darkblue;
+            padding:1% 0%;
+        }
+        
+        #nav1 ul{
+            height: 5%;
+            width:100%;
+            
+        }
+        
+        #nav1 li{
+            width:40%;
+            padding:1% 3%;
+            margin: 15% 2%;
+            display: inline;
+            border-radius: 30px;
+            background-color: darkblue;
+            color:white;
+            border:1px solid white;
+            font-size: 1em
+        }
+
+        #nav1 li:hover{
+            font-size: 1.4em;
+            padding:1% 5%;
+            margin: 2% -0.5%;
+            transition-duration: 0.5s;
+        }
+        
+        #nav2{
+            margin: 1.5%;
+            width:30%;
+        }
+
+        #nav2 ul{
+            margin: auto;
+        }
+        
+        #nav2 li{
+            border:5px solid darkgreen;
+            background-color: darkgreen;
+            display: block;
+            width: 100%;
+            margin: auto;
+            padding:5%;
+            position: relative;
+            border-bottom: 1px solid white;
+
+        }
+        
+        #nav2 a{
+            height: 100%;
+             
+            width: 100%;
+
+            margin: 5% 20%;
+            color:white;
+            font-size: 2em;
+        }
+        
+        #nav1 .active{
+            color:darkblue;
+            
+            border:hidden;
+            background-color: white;
+        }
+
+        #nav2 .active{
+            border-bottom: 1px solid darkgreen;
+            background-color: white;
+        }
+        
+        #nav2 .active a{
+            color:darkgreen;
+
+        }
+       
+        #nav2 li:hover{
+            font-size: 1.4em;
+            margin: 0;
+            padding: 2.5% 5%;
+            transition-duration: 0.4s;
+        }
+
+        
+    </style>
+    </head>
+    <body>
+
+        <nav id="nav1">
+            <ul>
+        <li ><a id="menu">Menu</a></li>
+        <li class="active"><a>Home</a></li>
+        <li><a>Posts</a></li>
+        <li><a>Notifications</a></li>
+        <li><a>Messages</a></li>
+        <li><a>More</a></li>
+    </ul>
+</nav>
+
+<nav id="nav2">
+    <ul>
+        <li class="active"><a >Dashboard</a></li>
+        <li><a>Profile</a></li>
+        <li><a>Friends</a></li>
+        <li><a>Tasks</a></li>
+        <li><a>Logout</a></li>
+    </ul>
+</nav>
+
+    </body>
