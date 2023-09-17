@@ -7,8 +7,11 @@
         <meta name="description" content="A clone of the IT Solve page as done by SolomonDavid">
         <title>Solomon's IT Solve</title>
         <link rel="stylesheet" href="./styles/style.css"/>
+        <!-- <link rel="stylesheet" href="./styles/style.css" media="screen and (min-width:990px)"/>
+        <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width:990px)"/> -->
         <link rel="stylesheet" href="./styles/aos.css"/>
         <script src="./scripts/aos.js"></script>
+        <script src="./scripts/script.js"></script>
        
     </head>
     <body>
@@ -17,18 +20,32 @@
             <!-- header top-->
             <div id="header-top">
                 <!--image-->
-                <img src="./images/asset 0.png" alt="header image"/>
-                <!--nav bar-->
-                <nav id="nav" aria-label="top nav bar">
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#company">company</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#project">project</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </nav>
+                <div id="image">
+                        <img src="./images/asset 0.png" alt="header image"/>
+                    </div>
+                    
+                    <div id="navis">
+                        <!--nav bar-->
+                        <svg id="nav-btn" xmlns="http://www.w3.org/2000/svg" ><title>Hamburger icon</title>
+                        <path id="menu" d="M1 1 L30 1
+                                M1 12  L30 12
+                                M1 24 L30 24"/>
+                        <path id="close" d="M6 0 L24 24    
+                        M6 24 L24 0"/>
+                        
+                    </svg> 
+                    <nav id="nav" aria-label="top nav bar">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#company">company</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#project">project</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul> 
+                    </nav>
+                </div>
+                
             </div>
             <!-- header bottom-->
             <div id="header-bottom">
@@ -93,7 +110,7 @@
                         
                         their value through custom software development.
                     </p>
-                    <ul id="company-list">
+                    <ul id="checked-list">
                         <li>Lorem ipsum dolarorit ametion consectetur elit</li>
                         <li>Suada faci lisis Lorem ipsum dolarorit.</li>
                         <li>IT Solve very underfunded business theme best of luck</li>
@@ -333,33 +350,33 @@
         <!-- How may we help you? -->
         <section>
             <div id="help-parent">
-            <div id="help">
-                <div id="help-form">
-                    <h2 class="heading">how may we help you!</h2>
-                    <p class="normal-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt consectetuer.</p>
-                    <form>
-                        <fieldset>
-                        <input name="name" placeholder="Your Name" />
-                        <input name="email" placeholder="Your Email" />
-                        <input name="number" type="number" placeholder="Phone Number" />
-                        <input name="subject" placeholder="Subject" />
-                        <textarea placeholder="Your Message"></textarea>
+                <div id="help">
+                    <div id="help-form">
+                        <h2 class="heading">how may we help you!</h2>
+                        <p class="normal-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt consectetuer.</p>
+                        <form>
+                            <fieldset>
+                            <input name="name" placeholder="Your Name" />
+                            <input name="email" placeholder="Your Email" />
+                            <input name="number" type="number" placeholder="Phone Number" />
+                            <input name="subject" placeholder="Subject" />
+                            <textarea placeholder="Your Message"></textarea>
                         </fieldset>
                         <input type="submit" value="Send Message"/>
-                    </form>
+                        </form>
+                    </div>
+                    <div id="help-image">
+                        <img src="./images/asset 14.png" alt="heeeelp"/>
+                    </div>
                 </div>
-                <div id="help-image">
-                    <img src="./images/asset 14.png" alt="heeeelp"/>
+                <div id="help-button">
+                    <div>
+                        <h2>great things in business are never <br> done by one person</h2>
+                    </div>
+                    <div>
+                        <button>read more</button>
+                    </div>
                 </div>
-            </div>
-            <div id="help-button">
-                <div>
-                    <h2>great things in business are never <br> done by one person</h2>
-                </div>
-                <div>
-                    <button>read more</button>
-                </div>
-            </div>
             </div>
         </section> 
         <!-- Latest Blog Posts -->
@@ -419,7 +436,7 @@
                 </div> 
 
                 <div>
-                    <i mg src="./images/call-removebg-preview.png" alt="wahala"/>
+                    <img src="./images/call-removebg-preview.png" alt="wahala"/>
                     <h4>telephone number</h4>
                     <p>+234 567 8901 234</p>
                 </div>    

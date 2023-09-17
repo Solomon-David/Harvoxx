@@ -1,0 +1,47 @@
+@media screen and (max-width:992px) {
+    
+    
+.hamburger{
+    position: sticky;
+    z-index: 100;
+    top:1rem;
+    left:18rem;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    height: 50px;
+}
+
+.menu{
+    position: fixed;
+    transform: translateY(-100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    transition: transform 0.2s;
+    background-color: white;
+    color: white;
+    list-style: none;
+    padding-top: 6rem;
+    justify-content: center;
+    display: block;
+}
+
+.close-icon{
+    display: none;
+}
+
+.menu-item{
+    padding: 10%;
+    text-decoration: none;
+    color: blue;
+}
+
+
+
+}
