@@ -4,12 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Harvoxx page/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/styles/desktop.css" media="screen and (min-width:1200px) "/>
+    <link rel="stylesheet" href="./assets/styles/tablet.css" media="screen and (min-width:431px) and (max-width:1199px)"/>
+    <link rel="stylesheet" href="./assets/styles/mobile.css" media="screen and (max-width:430px)"/>
+    <script src="./assets/scripts/script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <a href="./HTML tutorial/index.html">HTML tutorial</a>
-    <a href="./CSS tutorial/index.html">CSS tutorial</a>
-    <a href="./IT solve/index.html">IT Solve</a>
-    
+    <header>
+        <div>
+            <p id="name">SolomonDavid Akesobia</p>
+        </div>
+        <div>
+            <nav>
+                <svg id="nav-btn" xmlns="http://www.w3.org/2000/svg" ><title>Hamburger icon</title>
+                    <path id="menu" d="M1 1 L30 1
+                            M1 12  L30 12
+                            M1 24 L30 24"/>
+                    <path id="close" d="M6 0 L24 24    
+                    M6 24 L24 0"/>
+                </svg> 
+                <ul id="nav">
+                    <li>articles</li>
+                    <li>chats</li>
+                    <li>awards</li>
+                    <li>about</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="first" class="in-touch">
+            <button >Get in touch</button>
+        </div>
+    </header>
+    <section id="vision">
+        <h2>Helping companies build better, scalable software.</h2>
+        <p >Award-winning web developer and author, with over 15+ years of working experience
+            with Fortune 500 companies like Apple, Google, Meta and more.
+        </p>
+    </section>
+    <section id="companies">
+        <div class="company">
+            <img src="./assets/Walmart.svg" alt="Walmart.svg" />
+        </div>
+        <div class="company">
+            <img src="./assets/JP Morgan.svg" alt="JP Morgan.svg" />
+        </div>
+        <div class="company">
+            <img src="./assets/Visa.svg" alt="Visa" />
+        </div>
+        <div class="company">
+            <img src="./assets/Tinder.svg" alt="Tinder" />
+        </div>
+        <div class="company">
+            <img src="./assets/Samsung.svg" alt="Samsung" />
+        </div>
+        <div class="company">
+            <img src="./assets/Verizon.svg" alt="Verizon" />
+        </div>
+    </section>
+    <section id="projects">
+        <div class="project">
+            <div class="pimage">
+                <img src="./assets/HTML.PNG" alt="HTML">
+            </div>
+            <div>
+            <a  href="./HTML tutorial/index.html">HTML tutorial</a>
+            <i class="fa fa-arrow-right"></i>
+            </div>
+            <p>First project given to me at Harvoxx Tech Hub. I was able to work on my HTML skills.
+                This project taught me the basics of front end mark up. </p>
+        </div>
+        
+        <div class="project">
+            <div class="pimage">
+                <img src="./assets/CSS.PNG" alt="CSS">
+            </div>
+            <div>
+            <a href="./CSS tutorial/index.html">CSS tutorial</a>
+            <i class="fa fa-arrow-right"></i>
+            </div>
+            <p>Second project given to me at Harvoxx Tech Hub. I was able to work on my CSS and designing skills.
+                This project taught me the basics of front end designing. </p>
+        </div>
+
+        <div class="project">
+            <div class="pimage">
+                <img src="./assets/Harvoxx.PNG" alt="Harvoxx">
+            </div>
+            <div>
+            <a href="./Harvoxx page/index.html">Harvoxx page</a>
+            <i class="fa fa-arrow-right"></i>
+            </div>
+            <p>Third project given to me at Harvoxx Tech Hub. I was able to replicate the Harvoxx Tech Hub home page.
+                This project gave me experience with building web pages. </p>
+        </div>
+
+        <div class="project">
+            <div class="pimage">
+                <img src="./assets/IT solve.PNG" alt="IT solve">
+            </div>
+            <div>
+            <a href="./IT solve/index.html">IT solve</a>
+            <i class="fa fa-arrow-right"></i>
+            </div>
+            <p>Fourth project given to me at Harvoxx Tech Hub. I was able to work on another web page.
+                This project gave me more experience with building web pages. </p>
+        </div>
+                
+    </section>
+    <section id="about">
+        
+            <h3>A co-founder at one of the world's largest communities</h3>
+            <p>I am a full stack web developer with particular proficiency in back end development. 
+                I make particular use of the MEVN stack.
+                The MEVN stack consists of  MongoDB (and Mongoose), ExpressJS, VueJS and NodeJS.
+            </p>
+            <p>
+                MongoDB is the most popular NoSQL database. Data is stored in documents rather than 
+                in a data table. This makes it particularly great for storing data that may not be homogeneous.
+            </p>
+            <p>
+                ExpressJS is a NodeJS library that is used for backend web development. It helps with serviceslike routing, APIs, etc. 
+            </p>
+            <p>
+                VueJS is a frontend framework for building responsive web pages using components. It is a 
+                scaled-down version of Angular and an alternative to ReactJS.
+            </p>
+            <p>
+                NodeJS is a  JavaScript runtime environment that uses a C engine to run JavaScript outside a 
+                a web browser. It is the 2nd most popular option for backend development.
+            </p>
+        
+    </section>
+    <section id="contact">
+        <h3>Interested in working with me?</h3>
+        <p>I'm active on all social media platforms listed below, but you can also send me an emain
+            and i will get back to you within 24-48 hours
+        </p>
+        <div class="in-touch">
+            <button >Get in touch</button>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p id="name">SolomonDavid Akesobia</p>
+        </div>
+        <div id="footerimages">
+            <div class="footerimage">
+                <img src="./assets/Twitter.svg" alt="Twitter" >
+            </div>
+            <div class="footerimage">
+                <img src="./assets/LinkedIn.svg" alt="LinkedIn" >
+            </div>
+            <div class="footerimage">
+                <img src="./assets/Github.svg" alt="Github" >
+            </div>
+        </div>
+    </footer>
+<script>
+    // alert(window.screen.availWidth)
+</script>
 </body>
 </html>
+
+<!-- 
+    sections:
+    header[name,nav, get in touch]
+    vision {helping companies build, award-winning}
+    companies {walmart, JP morgan}
+    projects[stuff I've worked on]
+    about{A co-founder at...}
+    contact{Interested in working with me?}
+    footer[name, links]
+
+ -->

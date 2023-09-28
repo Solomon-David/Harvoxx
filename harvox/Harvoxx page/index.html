@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./fontawesome/css/all.css">
+        <script src="./script.js"></script>
         <title> Solomon's Harvoxx</title>
     </head>
     
@@ -24,7 +25,14 @@
                 <!--Nav bar-->
                 <div >
                     <nav id="nav-bar">
-                        <ul>
+                      <svg id="nav-btn" xmlns="http://www.w3.org/2000/svg" ><title>Hamburger icon</title>
+                      <path id="menu" d="M1 1 L30 1
+                              M1 12  L30 12
+                              M1 24 L30 24"/>
+                      <path id="close" d="M6 0 L24 24    
+                      M6 24 L24 0"/>
+                  </svg> 
+                        <ul class="close">
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -41,6 +49,7 @@
                                 <button class="round-btn"><a href="#about">Get Started</a></button>
                             </li>
                         </ul>
+                        
                     </nav>
                 </div>
             </div>
@@ -100,8 +109,10 @@
                             <div id="about-grid">
                                 <!--Diversity-->
                                 <article id="diversity">
-                                    <i class="fa fa-newspaper"></i>
-                                    <h3 class="small-heading">Diversity</h3>
+                                    <div>
+                                        <i class="fa fa-newspaper"></i>
+                                        <h3 class="small-heading">Diversity</h3>
+                                    </div>
                                    <p>We have a community that celebrates differences 
                                        hence, we encourage every member of the team and 
                                        client to be proud of their unique qualities and skills.
@@ -109,8 +120,10 @@
                                 </article>
                                 <!--Impact-->
                                 <article id="impact">
-                                    <i class="fa fa-cube"></i>
-                                    <h3 class="small-heading">Impact</h3>
+                                    <div>
+                                        <i class="fa fa-cube"></i>
+                                        <h3 class="small-heading">Impact</h3>
+                                    </div>
                                    <p>We are determined to impact in our society. Hence, we 
                                        are steadily ensuring that we find meaning and making 
                                        great impact through hard work and services.
@@ -118,8 +131,10 @@
                                 </article>
                                 <!--Commitment to client-->
                                 <article id="commitment">
-                                    <i class="fa fa-images"></i>
-                                    <h3 class="small-heading">commitment to client</h3>
+                                    <div>
+                                        <i class="fa fa-images"></i>
+                                        <h3 class="small-heading">commitment to client</h3>
+                                    </div>
                                    <p>Here, we believe that commitment to client is an 
                                        essential ingredient for success. We are willing to go 
                                        above and beyond to deliver and satisfy our clients.
@@ -127,8 +142,10 @@
                                 </article>
                                 <!--Integrity-->
                                 <article id="integrity">
-                                    <i class="fa fa-shield-halved"></i>
-                                    <h3 class="small-heading">integrity</h3>
+                                    <div>
+                                        <i class="fa fa-shield-halved"></i>
+                                        <h3 class="small-heading">integrity</h3>
+                                    </div>
                                    <p>We stay true to our culture and words. We uphold 
                                        principles and processes that will earn us trust and
                                         respect from our clients.                                   </p>

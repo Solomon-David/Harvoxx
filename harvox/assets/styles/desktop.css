@@ -1,0 +1,262 @@
+body{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    color:white;
+    margin: 0;
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+body > * {
+    position: relative;
+    width: 90%;
+    /* margin: auto; */
+    padding: 0 5%;
+    
+}
+
+img{
+    width: 50%;
+}
+
+
+/* for header */
+
+
+header{
+   
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    height: fit-content;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+section, footer{
+    margin: 2% auto;
+    
+}
+
+#name, p, nav ul {
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+p#name{
+    color:white;
+    
+}
+
+p{
+    color:gray;
+}
+
+
+
+ nav ul{
+    display: inline-flex;
+    flex-direction: row;
+    gap:20%;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+
+nav li:hover{
+    text-decoration:  underline solid white 0.2rem;
+    text-underline-offset: 40%;
+}
+
+.in-touch{
+    width:10%;
+    justify-content: center;
+    justify-self: end;
+    margin: 1% 0% 1% 20%;
+}
+
+.in-touch button{
+    background-color: rgba(255, 255, 50, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    width:100%;
+    padding: 0.5rem 0rem;
+}
+
+#first{
+    display: inline;
+}
+
+
+
+#menu{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+#nav-btn{
+    display: none;
+}
+
+/* for vision */
+
+#vision{
+    display: grid;
+    grid-template-areas: "header ."
+                    " text .";
+    column-gap: 50%;
+    row-gap: 10%;
+}
+
+#vision>*{
+    margin: 0% auto;
+}
+
+#vision h2{
+    grid-area: header;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+#vision p{
+
+    grid-area: text;
+}
+
+/* companies */
+
+#companies{
+ display: grid;
+ grid-template-columns: repeat(6,1fr);   
+ 
+}
+
+/* projects */
+
+#projects{
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(2,1fr);
+    gap: 5% 5%;
+    margin:5% auto;
+}
+
+.pimage{
+    justify-self: stretch;
+    width: 100%;
+    
+}
+
+.pimage img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    column-gap: 2.5%;
+    
+
+}
+
+.project a{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+}
+
+.project a:hover{
+    text-decoration: underline ;
+    text-underline-offset: 10%;
+}
+
+.project .fa::before{
+    font-size: 1.5rem;
+}
+/* about */
+#about{
+    background-color: rgb(68, 67, 67);
+    column-count: 2;
+    padding:5% ;
+  
+}
+
+#about p{
+    color:white;
+    margin: 4% auto;
+}
+
+#about h3{
+    margin: 4% auto;
+    font-size: 2rem;
+
+}
+
+/*  */
+
+#contact{
+    display: block;
+    margin: 0;
+    padding: 0 auto;
+    display: grid;
+    grid-template-areas: "header ."
+                    " text ."
+                    "button .";
+    column-gap: 50%;
+
+}
+
+#contact > *{
+    margin: 1% 0%;
+}
+
+#contact h3{
+    font-size: 2.5rem;
+    grid-area: header;
+}
+
+#contact p{
+    grid-area: text;
+}
+
+#contact .in-touch{
+    grid-area: button;
+    width: 20%;
+    justify-self: start;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(68, 67, 67);
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    gap: 50%;
+    padding:1% 5%;
+}
+
+#footerimages{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20%;
+    align-content: stretch; */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    gap:5%;
+}
+
+.footerimage img{
+    width: 100%;
+}
