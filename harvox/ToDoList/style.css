@@ -1,0 +1,308 @@
+:root{
+    --primary-color:rgb(184, 172, 235);
+    text-transform: capitalize;
+}
+
+body{
+    margin: 0;
+    padding:0;
+
+}
+
+header,footer{
+    
+    margin:0;
+    font-size:1.5rem;
+    background-color: var(--primary-color);
+}
+
+header,main,footer{
+    width:100%;
+    text-align: center;
+   
+}
+
+header {
+    padding:0.1rem 0;
+}
+
+main{
+    margin-block: 1rem;
+}
+
+footer{
+    position: absolute;
+    padding:1rem 0;
+    bottom:0;
+
+}
+
+section{
+    width: 90%;
+    margin: 0% auto;
+}
+
+section > div{
+    width: 100%;
+}
+
+.search{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+    gap:10%;
+}
+
+.search > *{
+    display: grid;
+}
+
+.searchtools{
+    
+    grid-template-columns:7fr 3fr;
+    gap:2%;
+    justify-content: center;
+
+}
+
+.searchtools > input{
+    padding:2.5% 5% 5% 5%;
+    /* padding-left:2%; */
+}
+
+#search, .addBtn{
+background-color: var(--primary-color);
+    border-radius: 5px;
+    color:black;
+    border:2px solid gray;
+font-weight: 500;
+font-size: 1rem;
+}
+
+#search{
+    padding:2.5% 10%;
+}
+
+#search:active{
+    background-color: darkblue;
+    color:white;
+}
+
+.filter{
+    grid-template-rows: 1fr 3fr;
+    align-items: baseline;
+    gap:10%;
+}
+
+#filterbtn{
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    padding: 1.5% 0;
+}
+
+
+
+.closed{
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+    
+}
+
+.closed div{
+    display: flex;
+    border: 1px solid darkgray;
+    flex-direction: row;
+    border-radius: 2rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    gap:2%;
+    text-transform: capitalize;
+    border:none;
+}
+
+.close{
+    color:red;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid darkgrey;
+    padding:0.1%;
+    border-radius: 2px;
+    display: none;
+    width: 100%;
+}
+
+
+.close:active{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+
+.tasks{
+    width: 70%;
+    border:2px solid grey;
+    
+}
+
+
+.taskheader{
+    border-bottom: 1px solid grey;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    gap:4% 5%;
+    justify-content:flex-end;
+    align-self: center;
+}
+
+.taskheader h3{
+    /* margin-left: 10%; */
+    margin:2.5% 35% 1% 0%;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.addBtn{
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+}
+
+.addBtn + .close{
+    padding:inherit;
+    font-size: 2rem;
+}
+
+div:has(.addBtn){
+    align-self: center;
+    
+    margin-right:5% ;
+    
+}
+
+.addTask{
+    color:var(--primary-color);
+}
+
+.addInput{
+    margin-bottom: 2.5%;
+    flex-direction: row;
+    justify-content: center;
+    display: none;
+}
+
+.addopts{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+
+.taskbody{
+    display: block;
+    width:100%;
+    justify-content: center;
+    font-size: 1.4rem;
+    overflow-y: scroll;
+
+    margin: auto;
+    height:15rem;
+}
+
+.taskbody::-webkit-scrollbar{
+    background-color:transparent;
+    width:0.25rem;
+}
+
+.taskbody::-webkit-scrollbar-thumb{
+    
+    background-color: var(--primary-color);
+    
+}
+
+.taskitem{
+    border-top:1px solid grey;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-height:3rem;
+    
+    gap: 5%;
+}
+
+.taskitem:nth-of-type(odd){
+    background-color: white;
+}
+
+.taskitem:nth-of-type(even){
+    background-color: var(--primary-color);
+}
+
+.taskitem:last-of-type{
+    border-bottom:1px solid grey;
+}
+
+.task{
+    display: flex;
+    width:40%;
+    
+    max-width: 60%;
+    text-align: left;
+    padding: 5% 0;
+    
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    gap:50%;
+    /* background-color: inherit; */
+}
+
+.options .close{
+    color:black;
+    padding:10%;
+    border: none;
+    display: inline;
+}
+
+.options .close:active{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+.num{
+    justify-self: flex-end;
+    margin-left: -5%;
+}
+
+
+
+@media screen and (max-width:430px) {
+    .taskitem{
+        width: 90%;;
+        gap:10%;
+        
+        max-height: 20rem;
+        padding: 5%;
+    }
+    .addInput{
+        flex-direction: column;
+    }
+    .options{
+        gap:20%;
+    }
+
+   
+}

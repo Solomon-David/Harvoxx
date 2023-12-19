@@ -142,7 +142,7 @@ nav li:hover{
 #projects{
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(2,1fr);
-    gap: 5% 5%;
+    
     margin:5% auto;
 }
 
@@ -163,19 +163,46 @@ nav li:hover{
     flex-direction: column;
     align-content: space-between;
     column-gap: 2.5%;
-    
-
+    margin:5%;
 }
 
-.project a{
-    font-size: 2rem;
-    color:white;
-    text-decoration: none;
+.project:nth-of-type(even){
+    margin-right: 0;
 }
 
-.project a:hover{
+.project:nth-of-type(odd){
+    margin-left: 0;
+}
+
+.project:nth-of-type(1), .project:nth-of-type(2){
+    margin-top: 0;
+}
+
+.project:nth-last-of-type(1), .project:nth-last-of-type(2){
+    margin-bottom: 0;
+}
+
+
+
+.project a:hover *{
     text-decoration: underline ;
     text-underline-offset: 10%;
+}
+
+.project a:hover p{
+    text-decoration-color: gray;
+}
+
+.project a:hover span{
+    text-decoration-color: white;
+}
+
+
+.project a, .project a:visited{
+    color:white;
+    text-decoration: none;
+    font-size: 2rem;
+
 }
 
 .project .fa::before{

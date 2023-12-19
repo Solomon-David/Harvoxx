@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" ></script>
+</head>
+<body>
+    
+    <header>
+        <h2 class="header">To-Do List</h2>
+    </header>
+    <main id="card">
+        <section class="search">
+                <div class="searchtools">
+                    <input type="text" placeholder="find task"/>
+                    <button id="search">Search</button>
+                </div>
+                <div class="filter">
+                    <button id="filterbtn">Filter</button>
+                    <form class="closed" style="display: none;">
+                        <div class="radio">
+                            <fieldset>
+                                <label for="radio">all</label>
+                                <input type="radio" checked value="all" name="radio" />
+                            </fieldset>
+                            <fieldset>
+                                <label for="radio">done</label>
+                                <input type="radio" value="done" name="radio" />
+                            </fieldset>
+                            <fieldset>
+                                <label for="radio">undone</label>
+                                <input type="radio" value="undone" name="radio" />
+                            </fieldset>
+                        </div>
+                        <button class="close" type="button">X</button>
+                    </form>
+                </div>
+ 
+        </section>
+        <section class="tasks">
+            <div class="taskheader">
+                <h3>tasks</h3>
+                <div>
+                    <button class="addBtn">+</button>
+                    <button class="close">X</button>
+                </div>
+            </div>
+            <div class="addInput">
+                <input type="text" class="addText">
+                <div class="addopts">
+
+                    <button class="save">Save</button>
+                    
+                </div>
+            </div>
+            <div class="taskbody">
+                
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        Made by SolomonDavid Akesobia
+    </footer>
+</body>
+</html>
+
+<!-- 
+    STRUCTURE
+    card
+        head
+            {(vert)
+            search task(input, button(search), collapseable container(filter))(hori)
+                filter(radio(all,done,undone), button(close)) (hori)
+
+            
+
+            }
+        tasks
+            {(vert)
+                
+                +(button,collapseable container, button(close))
+                [collapseable container] (input, button(Add Task), button(Cancel/X))
+                task(p(task), checkbox(tick/untick), button(remove))
+            }
+
+    footer (Made by SolomonDavid)
+
+  
+ -->
